@@ -1,0 +1,1 @@
+This is a project from The Odin Project for Rock Paper Scissors to learn JavaScript
