@@ -8,24 +8,44 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <button onclick="computerPlay();">Test</button>
-    <script>
+<h1>Rock Paper Scissors</h1>
 
-//Your game is going to play against the computer
+<!--3 buttons for user selection-->
 
-//begin with a function called computerPlay 
-        
-
-function computerPlay(){
-//Computer that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’. 
-    var values = ["Rock", "Paper", "Scissors"]
-        valuesToUse = values[Math.floor(Math.random() * values.length)];
-
-        alert(valuesToUse)
-        }
+<button value="rock">Rock</button>
+<button value="paper">Paper</button>
+<button value="scissors">Scissors</button>
+<script>
 
 
-//We’ll use this function in the game to make the computer’s play. 
+const shoot = ["rock", "paper", "scissors"];
+
+var computerShoot = Math.floor(Math.random() * shoot.length);
+var userShoot = 
+
+function play(computerShoot, userShoot){
+
+}
+
+console.log(computerShoot, shoot[computerShoot]);
+
+
+
+
+//[DONE]  3 button for user. Rock Paper Scissor
+//[DONE] each button has value of rock paper scissor
+//selecting button stores that value
+//[DONE]computer generates random value of rock paper scissor
+//user value and computer value compared
+//if same value it is tie
+//else if user picks rock and computer scissor
+//display user wins
+//if user picks paper and computer scissor
+//display computer wins
+//repeat for each value
+
+
+
 
 
 
