@@ -12,22 +12,50 @@
 
 <!--3 buttons for user selection-->
 
-<button value="rock">Rock</button>
-<button value="paper">Paper</button>
-<button value="scissors">Scissors</button>
+<button type="button" onClick="userSelectionButton('rock')">Rock</button>
+<button type="button" onClick="userSelectionButton('paper')">Paper</button>
+<button type="button" onClick="userSelectionButton('scissors')">Scissors</button>
 <script>
 
 
-const shoot = ["rock", "paper", "scissors"];
 
-var computerShoot = Math.floor(Math.random() * shoot.length);
-var userShoot = 
 
-function play(computerShoot, userShoot){
+let userSelection;
+function userSelectionButton(selection){
+    userSelection = selection;
+}
+// how to get button working?
 
+
+
+
+
+const shoot = ['rock', 'paper', 'scissors'];
+let computerShoot = Math.floor(Math.random() * shoot.length);
+
+
+function play(computerShoot, userSelection){
+    if (computerShoot === userSelection)
+    window.alert('Tie')
+    
 }
 
-console.log(computerShoot, shoot[computerShoot]);
+console.log(userSelectionButton);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
